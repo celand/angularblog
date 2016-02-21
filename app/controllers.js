@@ -4,7 +4,6 @@ angular.module('app.controllers', [
 	.controller('PostController', ['$scope', '$http', function($scope, $http){
 		$http.jsonp('//www.example.com/api/get_recent_posts/?callback=JSON_CALLBACK').success(function(response){
 			$scope.posts = response;
-			console.log($scope.posts);
 		})
 	}])
 	.controller('PageController', ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http){
