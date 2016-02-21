@@ -1,5 +1,6 @@
 angular.module('app', [
 	'ngRoute',
+	'ngAnimate',
 	'app.controllers'
 ]).config(['$routeProvider', function($routeProvider){
 	$routeProvider.when('/', {
